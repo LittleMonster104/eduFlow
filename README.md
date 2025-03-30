@@ -9,58 +9,15 @@
         <b>English</b> |
         <a href="https://github.com/OptimalScale/LMFlow/blob/main/readme/README_zh-hans.md">简体中文</a> |
         <a href="https://github.com/OptimalScale/LMFlow/blob/main/readme/README_es.md">Español</a> |
-        <a href="https://github.com/OptimalScale/LMFlow/blob/main/readme/README_jp.md">日本語</a> |
-        <a href="https://github.com/OptimalScale/LMFlow/blob/main/readme/README_ko.md">한국어</a> |
-        <a href="https://github.com/OptimalScale/LMFlow/blob/main/readme/README_hindi.md">हिंदी</a>
+     
     <p>
 </h4>
-
-[![Website](https://img.shields.io/badge/Website-Demo-20B2AA.svg)](https://lmflow.com)
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/OptimalScale/LMFlow/blob/main/LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
-[![Doc](https://img.shields.io/badge/Website-Doc-ff69b4.svg)](https://optimalscale.github.io/LMFlow/)
-[![Embark](https://img.shields.io/badge/Discord-LMFlow-%237289da.svg?logo=discord)](https://discord.gg/u9VJNpzhvA)
-[![slack badge](https://img.shields.io/badge/Slack-Join-blueviolet?logo=slack&amp)](https://join.slack.com/t/lmflow/shared_invite/zt-1wju9nicy-woXbNtS~5MavHSAtiMxmxQ)
-[![WeChat badge](https://img.shields.io/badge/WeChat-Join-brightgreen?logo=wechat&amp)](https://ibb.co/ZhM4hhn)
-
-An extensible, convenient, and efficient toolbox for finetuning large machine learning models, designed to be user-friendly, speedy and reliable, and accessible to the entire community.
 
 <p align="center" width="100%">
 <img src="assets/features.png" alt="LMFlow-features" style="width: 100%; min-width: 300px; display: block; margin: auto;">
 </p>
 
 
-## Latest News
-* [2024-12-02] Support [Hymba](https://github.com/NVlabs/hymba), a new family of small language models featuring a hybrid-head parallel architecture. Check out [Post-training Hymba](https://github.com/OptimalScale/LMFlow/tree/main/experimental/Hymba) for more details.
-* [2024-07-01] 🏆 LMFlow receives the [**Best Demo Paper Award**](https://docs.google.com/presentation/d/1TVDooAZqkNObz5ysVhDFtqnnVHR-u8wqYvgix-gzPMs/edit#slide=id.g2e55907bbcc_0_70) at **NAACL 2024**! 🎉
-* [2024-06-30] Expanding Optimization Options! We now support custom optimizer training with a variety of optimizers. Dive into the details and try out the new features with our updated script at [custom_optimizers](https://github.com/OptimalScale/LMFlow/blob/main/scripts/run_finetune_with_custom_optim.sh).
-* [2024-04-25] :rocket: Support conversation template! We've preset the latest [Llama-3](https://huggingface.co/meta-llama/Meta-Llama-3-70B) and [Phi-3](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct) conversation templates as well as some frequently used templates such as `chatml` (see all templates [here](https://optimalscale.github.io/LMFlow/examples/DATASETS.html#conversation-template)), and we are working on adding more preset templates. Adding corresponding `--conversation_template` in the shell script and you are all set! :rocket:
-* [2024-03-27] Support [LISA](https://arxiv.org/abs/2403.17919), enabling 7B training in 24G memory without offloading! 
-* [2023-09-11] Support [speculative decoding](https://arxiv.org/abs/2211.17192). Check out [speculative_decoding](https://github.com/OptimalScale/LMFlow/blob/main/scripts/speculative_decoding/README.md) for the usage and acceleration details.
-* [2023-08-14] Support long context inference with position interpolation (Linear & NTK scaling ) for LLaMA models. Check out [postion_interpolation](https://github.com/OptimalScale/LMFlow/blob/main/readme/Position_Interpolation.md) for more details.
-* [2023-08-07] Support [Flash Attention-2](https://crfm.stanford.edu/2023/07/17/flash2.html). Check out [flash_attention](https://github.com/OptimalScale/LMFlow/blob/main/readme/flash_attn2.md) for more details.
-
-<details> <summary>More news...</summary>
-
-* [2023-08-02] Support [Llama2](https://ai.meta.com/llama/), [ChatGLM2](https://huggingface.co/THUDM/chatglm2-6b), and [Baichuan](https://huggingface.co/baichuan-inc/Baichuan-7B) models.
-* [2023-07-23] [LMFlow multimodal chatbot](https://github.com/OptimalScale/LMFlow/blob/main/scripts/run_vis_chatbot_gradio_minigpt4.sh) is now available! Support multimodal inputs of images and texts. [Online Demo](http://multimodal.lmflow.online) is also provided (We hold the service on a single GPU, hence one may experience "queuing" or "application busy" sometimes when multiple users are accessing at the same time, please wait and attempt again later when such event happens)![image](https://github.com/OptimalScale/LMFlow/blob/rpan-vision-encoder/assets/multimodal-chatbot-demo.gif)
-* [2023-06-22]  [LMFlow paper](https://arxiv.org/abs/2306.12420) is out! Check out our implementation details at https://arxiv.org/abs/2306.12420
-* [2023-06-16] Our finetuned Robin-33B-V2 scored an impressive 64.1 on the Huggingface LLM leaderboard in our offline evaluation, outperforming major open-source LLMs! All checkpoints (7B, 13B, 33B, and 65B) are [released](https://huggingface.co/OptimalScale)! Checkout the performance [here](https://medium.com/@hkust.ml/robin-v2-launches-achieves-unparalleled-performance-on-openllm-4f6886e822c1).
-* [2023-06-07] LMFlow is now officially available on PyPI! Install it with `pip install lmflow-finetune`!
-* [2023-05-30] Release [Robin-13B-v2](https://huggingface.co/OptimalScale/robin-13b-v2-delta) and [Robin-33B-v2](https://huggingface.co/OptimalScale/robin-33b-v2-delta)!
-
-* [2023-05-15] Release [LMFlow-data](http://lmflow.org:5000/lmflow_data.tar.gz), the training dataset of Robin-7B-v2. A new [test data](http://lmflow.org:5000/lmflow_chat_en_dialog_multiturn_single_nll_text2text.tar.gz) is also released.
-* [2023-05-09] Release [Robin-7B-v2](http://lmflow.org:5000/robin-7b-v2-delta.tar.gz), achieving competitive performance on chitchat, commonsense reasoning and instruction-following tasks. Refer to our [comprehensive study](https://medium.com/@hkust.ml/lmflow-benchmark-an-automatic-evaluation-framework-for-open-source-llms-ef5c6f142418).
-* [2023-05-08] Release [LMFlow Benchmark](https://medium.com/@hkust.ml/lmflow-benchmark-an-automatic-evaluation-framework-for-open-source-llms-ef5c6f142418), an automatic evaluation framework for open-source chat-style LLMs. [Benchmark results](https://docs.google.com/spreadsheets/d/1JYh4_pxNzmNA9I0YM2epgRA7VXBIeIGS64gPJBg5NHA/edit#gid=0) on 31 popular models are reported. [Participate in LMFlow Benchmark](https://github.com/OptimalScale/LMFlow#33-lmflow-benchmark).
-* [2023-04-21] Release [Robin-7B](http://lmflow.org:5000/robin-7b.tar.gz) (based on LLaMA-7B), and two models for commercial use: Parakeets-2.7B (based on GPT-NEO-2.7B) and Cokatoo-7B (based on StableLM-7B) [Download here](https://github.com/OptimalScale/LMFlow/tree/main#model-zoo)
-* [2023-04-15] Inference: Support streaming output and ChatGLM.
-* [2023-04-10] We propose a new alignment algorithm: [Reward rAnked FineTuning (RAFT)](https://optimalscale.github.io/LMFlow/examples/raft.html), which is more efficient than conventional (PPO-based) RLHF. [[Paper](https://arxiv.org/abs/2304.06767)]
-* [2023-04-02] [Web service](https://lmflow.com/) is online!
-* [2023-04-01] Release three instruction-tuned checkpoints and three medical checkpoints in [model zoo](https://github.com/OptimalScale/LMFlow#model-zoo): LLaMA-7B-tuned, LLaMA-13B-tuned, LLaMA-33B-tuned, LLaMA-7B-medical, LLaMA-13B-medical, and LLaMA-33B-medical.
-* [2023-03-27] Support full tuning and lora tuning for all decoder models.
-* [2023-03-27] [Tasked tuned model beats ChatGPT on medical domain](https://github.com/OptimalScale/LMFlow#model-performance).
-* [2023-03-27] Release code and checkpoints - [version 0.0.1](https://optimalscale.github.io/LMFlow/)! [Our tasked-tuned model beats ChatGPT on medical domain](https://github.com/OptimalScale/LMFlow#model-performance).
-</details>
 
 
 ## Table of Contents
