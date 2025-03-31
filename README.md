@@ -1,12 +1,8 @@
-<p align="center" width="50%">
-<img src="assets/logo.png" alt="eduFlow" style="width: 50%; min-width: 200px; display: block; margin: auto; background-color: transparent;">
-</p>
-
 # eduFlow
 
 <h4 align="center">
     <p>
-	@@ -17,234 +17,45 @@
+	
 <!-- <img src="assets/features.png" alt="LMFlow-features" style="width: 100%; min-width: 300px; display: block; margin: auto;"> -->
 </p>
 
