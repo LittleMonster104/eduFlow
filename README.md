@@ -7,7 +7,7 @@
 <h4 align="center">
     <p>
 	@@ -17,234 +17,45 @@
-<img src="assets/features.png" alt="LMFlow-features" style="width: 100%; min-width: 300px; display: block; margin: auto;">
+<!-- <img src="assets/features.png" alt="LMFlow-features" style="width: 100%; min-width: 300px; display: block; margin: auto;"> -->
 </p>
 
 ## introduction
